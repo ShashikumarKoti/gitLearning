@@ -71,7 +71,7 @@ git commands:
 				Now, "git st" would work same as "git status"
 	33. git restore <filename>  -> to discard all changes to a file and move it to previous commit.
 	34. git checkout -b <branchName> - > to create new branch and switch to that branch.
-	35. 
+	35. git checkout <branchName> -> to switch to a particular branch.
 
  	
 	
