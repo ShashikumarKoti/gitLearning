@@ -61,10 +61,13 @@ git commands:
 	25. git restore --staged <filename>  -> to move a file from staged area to unstaged area.
 	26. git checkout -- <filename>  -> to restore all changes to previous commit from modified area only. [Not possible to revert changes from staging area to previous commit]
 	27. git checkout -f   -> to restore all files to previous commit from modified area.
-	28. git remote add <url_name> <url>  -> Ex: git remote add origin <some git url>...here are we are giving url a name as "origin"
+	28. git remote add <url_name> <url>  -> Ex: git remote add origin <some git url>...here we are giving url a name as "origin"
 	29. git remote -v  -> gives output as below.   fetch for pull and other for push
 							origin  https://github.com/ShashikumarKoti/gitLearning.git (fetch)
 							origin  https://github.com/ShashikumarKoti/gitLearning.git (push)
+	30. git pull <url_name> <branch_name>  -> pulls from remote repo called "origin" from "master" branch  Ex: git pull origin master
+	31. git push -u origin master  -> pushes code to remote repo <origin> to "master" branch.
+	32.
 
  	
 	
