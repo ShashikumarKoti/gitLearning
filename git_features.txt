@@ -65,7 +65,7 @@ git commands:
 	29. git remote -v  -> gives output as below.   fetch for pull and other for push
 							origin  https://github.com/ShashikumarKoti/gitLearning.git (fetch)
 							origin  https://github.com/ShashikumarKoti/gitLearning.git (push)
-	30. git pull <url_name> <branch_name>  -> pulls from remote repo called "origin" from "master" branch  Ex: git pull origin master
+	30. git pull <url_name> <branch_name>   -> pulls from remote repo called "origin" from "master" branch  Ex: git pull origin master
 	31. git push -u origin master  -> pushes code to remote repo <origin> to "master" branch.
 	32.
 
