@@ -73,7 +73,8 @@ git commands:
 	34. git checkout -b <branchName> - > to create new branch and switch to that branch.
 	35. git checkout <branchName> -> to switch to a particular branch.
 	36. git branch  -> to list all branches
-	37. git merge development    -> to merge code from development into master   Note: Run this command from "master" branch
+	37. git merge development  -> to merge code from development into master   Note: Run this command from "master" branch
+					run push command after merge command :  i.e, git push origin master
 
  	
 	
