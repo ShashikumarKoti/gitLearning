@@ -78,6 +78,7 @@ git commands:
 			Note: If ther are any merge conflicts, then manually resolve them and then run below command again:
 									git add <filename>
 									git commit   -> to merge
+	38. git branch -v   -> gives info about last commit.
 
  	
 	
