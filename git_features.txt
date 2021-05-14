@@ -1,0 +1,75 @@
+Git:
+1. It is version control system
+2. Files can be easily recovered.
+3. Who introduced an issue and when.(bad code committed)
+4. Rollback to previous working state(code)
+
+Types of Version Control system:
+	1. Local VCS  -> ex: mainly storing all history in Database.
+	2. Centralizesd VCS -> all files in one single server. If server itself get damaged, then all data is lost.
+	3. Distributed VCS -> here whenver we do pull, complete history of files will be pulled. i.e Complete repo will be pulled.
+	
+Git is a software
+GitHub is a hosting service which host git repositories
+
+Git features:
+1. It captures the snapshot and not differences.
+2. Almost every operartion is local.
+3. git has integrity.(checksum feature so that files are not modified by any third party.).
+
+
+git configuration steps:
+	1. git config --global user.name "shashi"
+	2. git config --global user.email "shashikumar3089@gmail.com"
+	3. git config --list
+	4. git config user.name   <to check user>
+	
+Three stage architecture of Git:
+	1. Working directory -> (local files)
+	2. Staging area -> (files which are added/modified to be committed into repository)
+	3. git repository(repo)
+
+Note: commit and snapshot are same.
+Note: A folder which is tracked by git is called repository.
+
+git commands:
+	1. git status
+	2. git init -> to initialize the folder as git repository.
+	3. git add --a   -> to add all untracked files to staging area.
+	4. git add <filename> -> to add particular file to staging area.
+	5. git commit  -> to commit changes
+	6. git log -> show commit history.
+	7. rm -rf .git  -> uninintialize folder from git. (.git hidden folder will be deleted). i.e files are no more tracked by git. Very 		dangerous comman
+	8. git clone <url>  <foldername(optional)>  -> to clone a got repository
+	9. touch .gitignore  -> to ignore specific files (like log files)...add file names which you want to be ignored inside .gitignore file.
+	10. git diff  -> compares file with staging area and working directory. 
+	11. git diff --staged  -> compares files with last commit and staging area. (lines shown in red colour are from last commit and the ones in green are from staging area).
+	12. git commit -a -m "Direct commit"  -> to skip staging area and directly commit all the Tracked files only. (not recommended). 
+			Note: Untracked files will not be committed by above command,
+	13. git rm <filename>  -> deletes the file and also adds it in staging area.
+	14. git mv <old filename> <new filename>  -> renames any given file and also adds it in staging area.
+	15. git rm --cached <filename> -> to stop a particular file from being tracked.
+	16. git log -p  -> shows entire git log history along with the files changed.
+	17. git log -p -n -> shows last n git log history along with the files changed. Ex: git log -p -3 shows last 3 commit history with files changed.
+	18. git log --stat  -> brief summary of commits.
+	19. git log --pretty=oneline  -> shows commit history in one line
+	20. git log --pretty=short  -> shows commit history in short
+	21. git log --pretty=full  -> shows commit history in full
+	22. git log --since=2.days  -> shows commit history in last 2 days.  [--since=2.weeks, --since=2.months can also be used]
+	23. git log --pretty=format:"%h" -- "%an"  -> try this command om your own [this is a filter to show log message]
+	24. git commit --amend  -> adds/merges changes to the previous commit id instead of creating new commit id.
+	25. git restore --staged <filename>  -> to move a file from staged area to unstaged area.
+	26. git checkout -- <filename>  -> to restore all changes to previous commit from modified area only. [Not possible to revert changes from staging area to previous commit]
+	27. git checkout -f   -> to restore all files to previous commit from modified area.
+	28. git remote add <url_name> <url>  -> Ex: git remote add origin <some git url>...here are we are giving url a name as "origin"
+	29. git remote -v  -> gives output as below.   fetch for pull and other for push
+							origin  https://github.com/ShashikumarKoti/gitLearning.git (fetch)
+							origin  https://github.com/ShashikumarKoti/gitLearning.git (push)
+
+ 	
+	
+	
+Note: git add command is used to move file from untracked stage to unmodified(tracked) stage and also to modified stage.
+		After committing a files(s), it will again come back to unmodified state.
+		
+Note: If a file is modified after it is put in staging area, then that file is available both in modified area and staging area.
