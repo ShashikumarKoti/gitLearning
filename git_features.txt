@@ -84,6 +84,9 @@ git commands:
 	41. git branch --no-merged  -> shows branches which are Not merged into master.  Note: Run this command from "master" branch
 	42. git push origin <branchName>:<branchName2>  -> here a new branc will be created as branchName2 and code will be pushed to that branch from <branchName> branch.
 	43. git push -d origin <branchName> - > to delete branch in repo.
+	44. git fetch -> downloads all changes from remote repo to local repo
+				After this we have to "git merge" to bring those changes to working directory.
+	45. git pull ->  git is equal to (git fetch + git merge).
 
  	
 	
