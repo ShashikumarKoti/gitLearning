@@ -79,9 +79,11 @@ git commands:
 									git add <filename>
 									git commit   -> to merge
 	38. git branch -v   -> gives info about last commit.
-	39. git branch -d <branchName> -> to delete branch.
+	39. git branch -d <branchName> -> to delete branch locally.
 	40. git branch --merged -> shows branches which are merged into master.  Note: Run this command from "master" branch
 	41. git branch --no-merged  -> shows branches which are Not merged into master.  Note: Run this command from "master" branch
+	42. git push origin <branchName>:<branchName2>  -> here a new branc will be created as branchName2 and code will be pushed to that branch from <branchName> branch.
+	43. git push -d origin <branchName> - > to delete branch in repo.
 
  	
 	
