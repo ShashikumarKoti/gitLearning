@@ -87,6 +87,7 @@ git commands:
 	44. git fetch -> downloads all changes from remote repo to local repo
 				After this we have to "git merge" to bring those changes to working directory.
 	45. git pull ->  git is equal to (git fetch + git merge).
+	46. git merge and git rebase are two ways to integrate changes one branch to another branch.
 
  	
 	
