@@ -88,6 +88,7 @@ git commands:
 				After this we have to "git merge" to bring those changes to working directory.
 	45. git pull ->  git is equal to (git fetch + git merge).
 	46. git merge and git rebase are two ways to integrate changes one branch to another branch.
+	47. git rebase  ->  refer https://www.youtube.com/watch?v=KWAZl2QHC44
 
  	
 	
